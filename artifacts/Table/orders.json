@@ -1,0 +1,203 @@
+{
+	"id": "ba91914d-6d6a-4f77-b944-29d3311f63e0",
+	"createdAt": "2024-04-09T17:49:41.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "order_id",
+			"fieldType": "uuid",
+			"isUnique": true,
+			"description": "Unique identifier for the order",
+			"isNullable": false
+		},
+		{
+			"fieldName": "customer_id",
+			"fieldType": "uuid",
+			"isUnique": false,
+			"description": "Identifier for the customer who placed the order",
+			"isNullable": false
+		},
+		{
+			"fieldName": "order_date",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"description": "Date and time when the order was placed",
+			"isNullable": false
+		},
+		{
+			"fieldName": "total_amount",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"description": "Total amount of the order",
+			"isNullable": false,
+			"precision": "10",
+			"scale": "2"
+		},
+		{
+			"id": "34a07529-52ac-4c96-8884-b96c6bde7b44",
+			"fieldName": "product_id",
+			"fieldType": "uuid",
+			"isUnique": true
+		},
+		{
+			"fieldName": "is_completed",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Flag indicating if the order is completed",
+			"isNullable": false
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"id": "3f927369-e3c0-449f-81f0-ff45d9f75dfe",
+			"name": "FK_43ada0ebd65c99effd32a571add",
+			"referencedTable": "products",
+			"referencedTableId": "fcae1d36-6b01-4608-bd8a-4789d5207895",
+			"referencedTableColumns": [
+				{
+					"fieldName": "name",
+					"fieldType": "text",
+					"isUnique": false,
+					"description": "Name of the product",
+					"isNullable": false
+				},
+				{
+					"fieldName": "price",
+					"fieldType": "decimal",
+					"isUnique": false,
+					"description": "Price of the product",
+					"isNullable": false,
+					"precision": "10",
+					"scale": "2"
+				},
+				{
+					"fieldName": "description",
+					"fieldType": "text",
+					"isUnique": false,
+					"description": "Description of the product",
+					"isNullable": true
+				},
+				{
+					"fieldName": "category",
+					"fieldType": "text",
+					"isUnique": false,
+					"description": "Category of the product",
+					"isNullable": true
+				},
+				{
+					"fieldName": "quantity",
+					"fieldType": "integer",
+					"isUnique": false,
+					"description": "Quantity of the product",
+					"isNullable": false
+				},
+				{
+					"fieldName": "is_available",
+					"fieldType": "boolean",
+					"isUnique": false,
+					"description": "Availability of the product",
+					"isNullable": false
+				},
+				{
+					"fieldName": "created_at",
+					"fieldType": "timestamptz",
+					"isUnique": false,
+					"description": "Timestamp of when the product was created",
+					"isNullable": false
+				},
+				{
+					"fieldName": "updated_at",
+					"fieldType": "timestamptz",
+					"isUnique": false,
+					"description": "Timestamp of when the product was last updated",
+					"isNullable": false
+				}
+			],
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"id": "34a07529-52ac-4c96-8884-b96c6bde7b44",
+					"fieldName": "product_id",
+					"fieldType": "uuid",
+					"isUnique": true,
+					"referencedColumnName": "id"
+				}
+			]
+		},
+		{
+			"id": "46689526-aa5b-4e6c-ecde-099fb260b87a",
+			"name": "FK_e4762622e10df47495a737be85c",
+			"referencedTable": "customer",
+			"referencedTableId": "f24d5300-bb49-4faf-ba3e-163fb88fc2be",
+			"referencedTableColumns": [
+				{
+					"fieldName": "name",
+					"fieldType": "text",
+					"isUnique": false,
+					"description": "Name of the customer",
+					"isNullable": false
+				},
+				{
+					"fieldName": "email",
+					"fieldType": "text",
+					"isUnique": true,
+					"description": "Email address of the customer",
+					"isNullable": false
+				},
+				{
+					"fieldName": "phone",
+					"fieldType": "text",
+					"isUnique": false,
+					"description": "Phone number of the customer",
+					"isNullable": true
+				},
+				{
+					"fieldName": "address",
+					"fieldType": "text",
+					"isUnique": false,
+					"description": "Address of the customer",
+					"isNullable": true
+				},
+				{
+					"fieldName": "age",
+					"fieldType": "integer",
+					"isUnique": false,
+					"description": "Age of the customer",
+					"isNullable": true
+				},
+				{
+					"fieldName": "is_active",
+					"fieldType": "boolean",
+					"isUnique": false,
+					"description": "Flag indicating if the customer is active",
+					"isNullable": false
+				},
+				{
+					"fieldName": "created_at",
+					"fieldType": "timestamptz",
+					"isUnique": false,
+					"description": "Timestamp of when the customer was created",
+					"isNullable": false
+				}
+			],
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"fieldName": "order_id",
+					"fieldType": "uuid",
+					"isUnique": true,
+					"referencedColumnName": "id"
+				}
+			]
+		}
+	],
+	"name": "orders",
+	"description": "Table for storing orders",
+	"ver": "24.04.09.1857",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "3d160aa6-c520-456b-97af-8db4a7023869",
+	"rolesRead": [],
+	"rolesWrite": []
+}

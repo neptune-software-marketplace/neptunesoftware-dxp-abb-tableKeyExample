@@ -1,0 +1,57 @@
+{
+	"id": "3d160aa6-c520-456b-97af-8db4a7023869",
+	"createdAt": "2024-04-09T17:52:54.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-tableKeyExample"
+	},
+	"name": "neptunesoftware-dxp-abb-tableKeyExample",
+	"description": null,
+	"ver": "24.04.10.0936",
+	"enableCICD": true,
+	"apps": [],
+	"api": [],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "fcae1d36-6b01-4608-bd8a-4789d5207895",
+			"name": "products",
+			"description": "Table for storing product information"
+		},
+		{
+			"id": "f24d5300-bb49-4faf-ba3e-163fb88fc2be",
+			"name": "customer",
+			"description": "Table for storing customer information"
+		},
+		{
+			"id": "ba91914d-6d6a-4f77-b944-29d3311f63e0",
+			"name": "orders",
+			"description": "Table for storing orders"
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}

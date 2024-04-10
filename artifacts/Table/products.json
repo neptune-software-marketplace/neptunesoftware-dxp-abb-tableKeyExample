@@ -1,0 +1,75 @@
+{
+	"id": "fcae1d36-6b01-4608-bd8a-4789d5207895",
+	"createdAt": "2024-04-09T17:50:40.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "name",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Name of the product",
+			"isNullable": false
+		},
+		{
+			"fieldName": "price",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"description": "Price of the product",
+			"isNullable": false,
+			"precision": "10",
+			"scale": "2"
+		},
+		{
+			"fieldName": "description",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Description of the product",
+			"isNullable": true
+		},
+		{
+			"fieldName": "category",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Category of the product",
+			"isNullable": true
+		},
+		{
+			"fieldName": "quantity",
+			"fieldType": "integer",
+			"isUnique": false,
+			"description": "Quantity of the product",
+			"isNullable": false
+		},
+		{
+			"fieldName": "is_available",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Availability of the product",
+			"isNullable": false
+		},
+		{
+			"fieldName": "created_at",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"description": "Timestamp of when the product was created",
+			"isNullable": false
+		},
+		{
+			"fieldName": "updated_at",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"description": "Timestamp of when the product was last updated",
+			"isNullable": false
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "products",
+	"description": "Table for storing product information",
+	"ver": "24.04.09.1853",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "3d160aa6-c520-456b-97af-8db4a7023869",
+	"rolesRead": [],
+	"rolesWrite": []
+}

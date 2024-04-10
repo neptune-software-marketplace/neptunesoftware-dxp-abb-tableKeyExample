@@ -1,0 +1,66 @@
+{
+	"id": "f24d5300-bb49-4faf-ba3e-163fb88fc2be",
+	"createdAt": "2024-04-09T17:52:08.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"fieldName": "name",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Name of the customer",
+			"isNullable": false
+		},
+		{
+			"fieldName": "email",
+			"fieldType": "text",
+			"isUnique": true,
+			"description": "Email address of the customer",
+			"isNullable": false
+		},
+		{
+			"fieldName": "phone",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Phone number of the customer",
+			"isNullable": true
+		},
+		{
+			"fieldName": "address",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Address of the customer",
+			"isNullable": true
+		},
+		{
+			"fieldName": "age",
+			"fieldType": "integer",
+			"isUnique": false,
+			"description": "Age of the customer",
+			"isNullable": true
+		},
+		{
+			"fieldName": "is_active",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Flag indicating if the customer is active",
+			"isNullable": false
+		},
+		{
+			"fieldName": "created_at",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"description": "Timestamp of when the customer was created",
+			"isNullable": false
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "customer",
+	"description": "Table for storing customer information",
+	"ver": "24.04.09.1853",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "3d160aa6-c520-456b-97af-8db4a7023869",
+	"rolesRead": [],
+	"rolesWrite": []
+}
