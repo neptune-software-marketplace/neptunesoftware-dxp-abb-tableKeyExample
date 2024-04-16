@@ -13,7 +13,7 @@
 		{
 			"fieldName": "customer_id",
 			"fieldType": "uuid",
-			"isUnique": false,
+			"isUnique": true,
 			"description": "Identifier for the customer who placed the order",
 			"isNullable": false
 		},
@@ -126,8 +126,8 @@
 			]
 		},
 		{
-			"id": "46689526-aa5b-4e6c-ecde-099fb260b87a",
-			"name": "FK_e4762622e10df47495a737be85c",
+			"id": "0969f4f1-c144-4ca5-b353-831822ced074",
+			"name": "FK_f79327447629005748d9e3ddf6a",
 			"referencedTable": "customer",
 			"referencedTableId": "f24d5300-bb49-4faf-ba3e-163fb88fc2be",
 			"referencedTableColumns": [
@@ -184,9 +184,11 @@
 			"columns": [
 				{
 					"referencedColumnId": "id",
-					"fieldName": "order_id",
+					"fieldName": "customer_id",
 					"fieldType": "uuid",
 					"isUnique": true,
+					"description": "Identifier for the customer who placed the order",
+					"isNullable": false,
 					"referencedColumnName": "id"
 				}
 			]
@@ -194,7 +196,7 @@
 	],
 	"name": "orders",
 	"description": "Table for storing orders",
-	"ver": "24.04.09.1857",
+	"ver": "24.04.16.1423",
 	"enableAudit": false,
 	"includeDataInPackage": false,
 	"package": "3d160aa6-c520-456b-97af-8db4a7023869",
